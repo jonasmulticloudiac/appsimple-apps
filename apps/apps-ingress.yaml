@@ -8,7 +8,7 @@ metadata:
 spec:
   tls:
   - hosts:
-    - legok8s.xyz
+    - app.do.legok8s.xyz
     secretName:  letsencrypt-prod
   rules:
   - host: app.do.legok8s.xyz
