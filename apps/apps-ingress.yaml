@@ -11,7 +11,7 @@ spec:
     - legok8s.xyz
     secretName:  letsencrypt-prod
   rules:
-  - host: legok8s.xyz
+  - host: app.do.legok8s.xyz
     http:
       paths:
       - pathType: Prefix
