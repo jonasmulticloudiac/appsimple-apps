@@ -9,9 +9,20 @@ spec:
   tls:
   - hosts:
     - app.do.legok8s.xyz
+    - jx.do.legok8s.xyz
     secretName:  letsencrypt-prod
   rules:
   - host: app.do.legok8s.xyz
+    http:
+      paths:
+      - pathType: Prefix
+        path: "/"
+        backend:
+          service:
+            name: svc-app1
+            port:
+              number: 80
+  - host: jx.do.legok8s.xyz
     http:
       paths:
       - pathType: Prefix
