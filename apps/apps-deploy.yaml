@@ -27,7 +27,7 @@ spec:
           valueFrom:
             configMapKeyRef: 
                name: app-configs 
-               key:  msg_05
+               key:  msg_01
 
         resources: {}
 status: {}
